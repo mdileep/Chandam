@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3795336-DB16-48D8-AED9-05D6B4EA9872}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TinyServer2</RootNamespace>
+    <AssemblyName>TinyServer2</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\TinyServer\Feedback.cs">
+      <Link>Feedback.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\Font.cs">
+      <Link>Font.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\Global.cs">
+      <Link>Global.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\Home.cs">
+      <Link>Home.cs</Link>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="..\TinyServer\Log.cs">
+      <Link>Log.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\MinifyJS.cs">
+      <Link>MinifyJS.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\RSS.cs">
+      <Link>RSS.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\Rule.cs">
+      <Link>Rule.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\ScriptManager.cs">
+      <Link>ScriptManager.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\Svg.cs">
+      <Link>Svg.cs</Link>
+    </Compile>
+    <Compile Include="..\TinyServer\Util\Content.cs">
+      <Link>Util\Content.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PutLink2.cs" />
+    <Compile Include="Util\Email2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rules\Chandam.Rules.csproj">
+      <Project>{91C994A6-0245-406C-8637-C446E58F27BE}</Project>
+      <Name>Chandam.Rules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Chandam.Util.csproj">
+      <Project>{B7ECDF4A-15E5-429C-BB4C-BFF673E85F08}</Project>
+      <Name>Chandam.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

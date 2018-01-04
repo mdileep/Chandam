@@ -1,0 +1,70 @@
+﻿440×2n/12
+
+Note	Frequency
+C	130.82
+C#	138.59
+D	146.83
+D#	155.56
+E	164.81
+F	174.61
+F#	185
+G	196
+G#	207.65
+A	220
+A#	233.08
+B	246.94
+Note	Frequency
+C	1046.5
+C#	1108.73
+D	1174.66
+D#	1244.51
+E	1318.51
+F	1396.91
+F#	1479.98
+G	1567.98
+G#	1661.22
+A	1760
+A#	1864.66
+B	1975.53
+Note	Frequency
+C	523.25
+C#	554.37
+D	587.33
+D#	622.25
+E	659.26
+F	698.46
+F#	739.99
+G	783.99
+G#	830.61
+A	880
+A#	932.33
+B	987.77
+	
+Note	Frequency
+C	261.63
+C#	277.18
+D	293.66
+D#	311.13
+E	329.63
+F	349.23
+F#	369.99
+G	392
+G#	415.3
+A	440
+A#	466.16
+B	493.88
+
+
+Scientific designation	Helmholtz designation	Bilinear music notation	Octave name	Frequency (Hz)
+C♯-1	C♯͵͵͵ or ͵͵͵C♯ or C♯C♯C♯C♯	(-uC♯)	Subsubcontra	8.662
+C♯0	C♯͵͵ or ͵͵C♯ or C♯C♯C♯	(-vC♯)	Subcontra	17.324
+C♯1	C♯͵ or ͵C♯ or C♯C♯	(-wC♯)	Contra	34.648
+C♯2	C♯	(-xC♯)	Great	69.296
+C♯3	c♯	(-yC♯)	Small	138.591
+C♯4	c♯′	(zC♯)	One-lined	277.183
+C♯5	c♯′′	(yC♯)	Two-lined	554.365
+C♯6	c♯′′′	(xC♯)	Three-lined	1108.731
+C♯7	c♯′′′′	(wC♯)	Four-lined	2217.461
+C♯8	c♯′′′′′	(vC♯)	Five-lined	4434.922
+C♯9	c♯′′′′′′	(uC♯)	Six-lined	8869.844
+C♯10	c♯′′′′′′′	(tC♯)	Seven-lined	17739.688

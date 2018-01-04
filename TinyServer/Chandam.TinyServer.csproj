@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{843818E0-6B1A-41CA-B229-F8FEF95D8992}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>Server</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\PDF\iText5.2+\Output\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.10.1\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.10.1\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Font.cs" />
+    <Compile Include="Rule.cs" />
+    <Compile Include="ScriptManager.cs" />
+    <Compile Include="Svg.cs" />
+    <Compile Include="Feedback.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Metrics.cs" />
+    <Compile Include="MinifyJS.cs" />
+    <Compile Include="PutLink.cs" />
+    <Compile Include="GetLink.cs" />
+    <Compile Include="Reports.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="Subscribe.cs" />
+    <Compile Include="Util\Content.cs" />
+    <Compile Include="Util\MongoUtil2.cs" />
+    <Compile Include="Util\Secrets.cs" />
+    <Compile Include="Util\DB\Metric.cs" />
+    <Compile Include="Util\DB\Metric2.cs" />
+    <Compile Include="Util\DB\MetricGroup.cs" />
+    <Compile Include="Util\DB\Subscription.cs" />
+    <Compile Include="Util\Email.cs" />
+    <Compile Include="Home.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Util\DB\Link.cs" />
+    <Compile Include="Util\MongoUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RSS.cs" />
+    <Compile Include="Util\Reports\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rules\Chandam.Rules.csproj">
+      <Project>{91C994A6-0245-406C-8637-C446E58F27BE}</Project>
+      <Name>Chandam.Rules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Chandam.Util.csproj">
+      <Project>{B7ECDF4A-15E5-429C-BB4C-BFF673E85F08}</Project>
+      <Name>Chandam.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

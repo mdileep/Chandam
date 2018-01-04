@@ -1,0 +1,1042 @@
+﻿//---------------------------------------------------------------------------------------------
+// <copyright file="Tel.RuleHelper.cs.exclude" company="Chandam-ఛందం">
+//    Copyright © 2013 - 2018 'Chandam-ఛందం' : http://chandam.apphb.com
+//    Original Author : Dileep Miriyala (m.dileep@gmail.com)
+//    Last Updated    : 03-Feb-2018 21:35EST
+//    Revisions:
+//       Version    | Author                   | Email                     | Remarks
+//       1.0        | Dileep Miriyala          | m.dileep@gmail.com        | Initial Commit
+//       _._        | <TODO>                   |   <TODO>                  | <TODO>
+// </copyright>
+//---------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using Chandam.Rules.Jati;
+using Chandam.Rules.Jati.Akkara;
+using Chandam.Rules.Jati.Dvipada;
+using Chandam.Rules.Jati.Ragada;
+using Chandam.Rules.Jati.Shatpada;
+using Chandam.Rules.Rare;
+using Chandam.Rules.Tel;
+using Chandam.Rules.Tel.Kokkonda;
+using Chandam.Rules.UpaJati;
+using Chandam.Rules.UpaJati.Seesamu;
+using Chandam.Rules.Vruttam;
+using Chandam.Util;
+namespace Chandam.Rules
+{
+
+	public  static  partial class Registered
+	{
+		public static Rule FetchRule (string identifier)
+		{
+			switch ( identifier )
+			{
+				case "GenricVruttam":
+					return new GenricVruttam ( );
+				case "taaLaragaDa":
+					return new taaLaragaDa ( );
+				case "nata":
+					return new nata ( );
+				case "nasahata":
+					return new nasahata ( );
+				case "chaMDavRshTiprayaata":
+					return new chaMDavRshTiprayaata ( );
+				case "arNa":
+					return new arNa ( );
+				case "arNava":
+					return new arNava ( );
+				case "vyaaLa":
+					return new vyaaLa ( );
+				case "jeemoota":
+					return new jeemoota ( );
+				case "leelaakara":
+					return new leelaakara ( );
+				case "uddaama":
+					return new uddaama ( );
+				case "SaMkha":
+					return new SaMkha ( );
+				case "nanahata":
+					return new nanahata ( );
+				case "sanahata":
+					return new sanahata ( );
+				case "nanata":
+					return new nanata ( );
+				case "nanaya":
+					return new nanaya ( );
+
+				case "sata":
+					return new sata ( );
+				case "ragaNa":
+					return new ragaNa ( );
+				case "tagaNa":
+					return new tagaNa ( );
+				case "nagaNa":
+					return new nagaNa ( );
+				case "hagaNa":
+					return new hagaNa ( );
+
+				case "Saaloora":
+					return new Saaloora ( );
+				case "laakshaNi":
+					return new laakshaNi ( );
+				case "dara":
+					return new dara ( );
+				case "chaarumati":
+					return new chaarumati ( );
+				case "ujjvala":
+					return new ujjvala ( );
+				case "vRtta":
+					return new vRtta ( );
+				case "madraka":
+					return new madraka ( );
+				case "vichikilata":
+					return new vichikilata ( );
+				case "durmila":
+					return new durmila ( );
+				case "SRMgaara":
+					return new SRMgaara ( );
+				case "kirITa":
+					return new kirITa ( );
+				case "baMdhura":
+					return new baMdhura ( );
+				case "vijaya":
+					return new vijaya ( );
+				case "suruchi":
+					return new suruchi ( );
+				case "vanaruha":
+					return new vanaruha ( );
+				case "jaladarava":
+					return new jaladarava ( );
+				case "varaha":
+					return new varaha ( );
+				case "prabhu":
+					return new prabhu ( );
+				case "apavaaha":
+					return new apavaaha ( );
+				case "tanvi":
+					return new tanvi ( );
+				case "kusuma":
+					return new kusuma ( );
+				case "mattaakrIDa":
+					return new mattaakrIDa ( );
+				case "narEMdra":
+					return new narEMdra ( );
+				case "surabhoojaraaja":
+					return new surabhoojaraaja ( );
+				case "kanakalata":
+					return new kanakalata ( );
+				case "haMsi":
+					return new haMsi ( );
+
+				case "prabhaalalitamu":
+					return new prabhaalalitamu ( );
+				case "kalita":
+					return new kalita ( );
+				case "bhujara":
+					return new bhujara ( );
+				case "kavikaMThavibhooShaNa":
+					return new kavikaMThavibhooShaNa ( );
+				case "SaMbhu":
+					return new SaMbhu ( );
+				case "Subhika":
+					return new Subhika ( );
+				case "hariNapluta":
+					return new hariNapluta ( );
+				case "tvaritapadagati":
+					return new tvaritapadagati ( );
+				case "niSa":
+					return new niSa ( );
+				case "haranartana":
+					return new haranartana ( );
+				case "ativinaya":
+					return new ativinaya ( );
+				case "dEvaraaja":
+					return new dEvaraaja ( );
+				case "kshmaahaara":
+					return new kshmaahaara ( );
+
+				case "bhoonuta2":
+					return new bhoonuta2 ( );
+				case "nalini":
+					return new nalini ( );
+				case "chaMdrarEkha":
+					return new chaMdrarEkha ( );
+				case "ila":
+					return new ila ( );
+				case "ila2":
+					return new ila2 ( );
+				case "alasagati":
+					return new alasagati ( );
+				case "padmakamu2":
+					return new padmakamu2 ( );
+				case "lalitagati":
+					return new lalitagati ( );
+				case "gajaraaja":
+					return new gajaraaja ( );
+				case "gajavilasita":
+					return new gajavilasita ( );
+				case "aSvagati":
+					return new aSvagati ( );
+				case "madanadarpaNa":
+					return new madanadarpaNa ( );
+				case "chaMdrabhaanu":
+					return new chaMdrabhaanu ( );
+				case "padakOkilakaaMka":
+					return new padakOkilakaaMka ( );
+				case "vaMSapattrapatita":
+					return new vaMSapattrapatita ( );
+				case "dhRti":
+					return new dhRti ( );
+				case "chaMpakakEsari":
+					return new chaMpakakEsari ( );
+				case "sumaMgali1":
+					return new sumaMgali1 ( );
+				case "prabhaatamu2":
+					return new prabhaatamu2 ( );
+				case "chaMcharIkaavali2":
+					return new chaMcharIkaavali2 ( );
+				case "bhaMbaragaana":
+					return new bhaMbaragaana ( );
+				case "padamaali":
+					return new padamaali ( );
+				case "prabha":
+					return new prabha ( );
+				case "prahEya":
+					return new prahEya ( );
+				case "maNimaala1":
+					return new maNimaala1 ( );
+				case "mEghavilasitamu":
+					return new mEghavilasitamu ( );
+				case "lalita":
+					return new lalita ( );
+				case "navamaalini":
+					return new navamaalini ( );
+				case "kusuma_vichitra":
+					return new kusuma_vichitra ( );
+				case "chaMdravartma":
+					return new chaMdravartma ( );
+				case "vRMta":
+					return new vRMta ( );
+				case "maMdaaradaama":
+					return new maMdaaradaama ( );
+				case "sumukhi":
+					return new sumukhi ( );
+				case "upasthita2":
+					return new upasthita2 ( );
+				case "upasthita1":
+					return new upasthita1 ( );
+				case "Ekaroopa":
+					return new Ekaroopa ( );
+				case "pRdhivi":
+					return new pRdhivi ( );
+				case "bhramara_vilasita":
+					return new bhramara_vilasita ( );
+				case "mauktikamaala":
+					return new mauktikamaala ( );
+
+				case "kOmala":
+					return new kOmala ( );
+				case "kaumidi":
+					return new kaumidi ( );
+				case "naMdini":
+					return new naMdini ( );
+				case "utsuka":
+					return new utsuka ( );
+				case "kiSOra":
+					return new kiSOra ( );
+				case "rasaali":
+					return new rasaali ( );
+				case "manOrama":
+					return new manOrama ( );
+				case "paMkti2":
+					return new paMkti2 ( );
+				case "bhOgavilasita":
+					return new bhOgavilasita ( );
+				case "mRgi":
+					return new mRgi ( );
+				case "vreeDa":
+					return new vreeDa ( );
+				case "kanya":
+					return new kanya ( );
+				case "sati":
+					return new sati ( );
+				case "preeti":
+					return new preeti ( );
+				case "naMda":
+					return new naMda ( );
+				case "valamuri":
+					return new valamuri ( );
+				case "vasumati":
+					return new vasumati ( );
+				case "vasudha":
+					return new vasudha ( );
+				case "chaMdravadana":
+					return new chaMdravadana ( );
+				case "saavitrI":
+					return new saavitrI ( );
+				case "suruchira1":
+					return new suruchira1 ( );
+				case "haMsamaala":
+					return new haMsamaala ( );
+				case "lOla":
+					return new lOla ( );
+				case "kumaaralalita2":
+					return new kumaaralalita2 ( );
+				case "prasavaSara":
+					return new prasavaSara ( );
+				case "haMsaruta":
+					return new haMsaruta ( );
+				case "vimaana":
+					return new vimaana ( );
+				case "vitaana":
+					return new vitaana ( );
+				case "maaNavaka":
+					return new maaNavaka ( );
+				case "naaraacha":
+					return new naaraacha ( );
+				case "naagara":
+					return new naagara ( );
+				case "bhujaMgaSiSirutamu":
+					return new bhujaMgaSiSirutamu ( );
+
+
+				case "mutyaalasaramu":
+					return new mutyaalasaramu ( );
+				case "mutyaalasaramu2":
+					return new mutyaalasaramu2 ( );
+
+				case "vaardhakashaTpada":
+					return new vaardhakashaTpada ( );
+				case "parivardinishaTpada":
+					return new parivardinishaTpada ( );
+				case "bhaamineeshaTpada":
+					return new bhaamineeshaTpada ( );
+				case "bhOgashaTpada":
+					return new bhOgashaTpada ( );
+				case "kusumashaTpada":
+					return new kusumashaTpada ( );
+				case "SarashaTpada":
+					return new SarashaTpada ( );
+
+				case "utkaLika":
+					return new utkaLika ( );
+				case "vijayabhadraragaDa":
+					return new vijayabhadraragaDa ( );
+				case "haMsagatiragaDa":
+					return new haMsagatiragaDa ( );
+				case "vRshabhagatiragaDa":
+					return new vRshabhagatiragaDa ( );
+				case "dviradagatiragaDa":
+					return new dviradagatiragaDa ( );
+				case "hariNagatiragaDa":
+					return new hariNagatiragaDa ( );
+				case "harigatiragaDa":
+					return new harigatiragaDa ( );
+				case "madhuragatiragaDa":
+					return new madhuragatiragaDa ( );
+				case "vijayamaMgaLaragaDa":
+					return new vijayamaMgaLaragaDa ( );
+				case "hayaprachaararagaDa":
+					return new hayaprachaararagaDa ( );
+				case "turagavalganaragaDa":
+					return new turagavalganaragaDa ( );
+
+
+				case "shaTpadamu":
+					return new shaTpadamu ( );
+				case "utpalamaala":
+					return new utpalamaala ( );
+				case "chaMpakamaala":
+					return new chaMpakamaala ( );
+				case "saardhoolaM":
+					return new saardhoolaM ( );
+				case "maththEbhaM":
+					return new maththEbhaM ( );
+				case "mattakOkilamu":
+					return new mattakOkilamu ( );
+				case "taralamu":
+					return new taralamu ( );
+				case "sragdhara":
+					return new sragdhara ( );
+				case "mahaasragdhara":
+					return new mahaasragdhara ( );
+				case "bhujaMgaprayaatamu":
+					return new bhujaMgaprayaatamu ( );
+				case "paMchaamaramu":
+					return new paMchaamaramu ( );
+				case "vasaMtatilakamu":
+					return new vasaMtatilakamu ( );
+				case "sragviNi":
+					return new sragviNi ( );
+				case "tOTakamu":
+					return new tOTakamu ( );
+				case "tOvakamu":
+					return new tOvakamu ( );
+				case "maalini":
+					return new maalini ( );
+				case "maanini":
+					return new maanini ( );
+				case "layagraahi":
+					return new layagraahi ( );
+				case "svaagatavRttamu":
+					return new svaagatavRttamu ( );
+				case "kaviraajaviraajitamu":
+					return new kaviraajaviraajitamu ( );
+				case "iMdravajramu":
+					return new iMdravajramu ( );
+				case "upEMdravajramu":
+					return new upEMdravajramu ( );
+				case "layavibhaati":
+					return new layavibhaati ( );
+				case "vanamayooramu":
+					return new vanamayooramu ( );
+				case "SlOkamu":
+					return new SlOkamu ( );
+				case "mEghavisphooritaM":
+					return new mEghavisphooritaM ( );
+				case "krauMchapadaM":
+					return new krauMchapadaM ( );
+				//Rare
+				case "praharaNakalita":
+					return new praharaNakalita ( );
+				case "sugaMdhi":
+					return new sugaMdhi ( );
+				case "layahaari":
+					return new layahaari ( );
+				case "vaaraaMgi":
+					return new vaaraaMgi ( );
+				case "nadeepraghOshamu":
+					return new nadeepraghOshamu ( );
+				case "praguNa":
+					return new praguNa ( );
+				case "naareeplutavRttamu":
+					return new naareeplutavRttamu ( );
+				case "ratipriyavRttamu":
+					return new ratipriyavRttamu ( );
+				case "SreeramaNamu":
+					return new SreeramaNamu ( );
+				case "SarabhakreeDaa":
+					return new SarabhakreeDaa ( );
+				case "naaree":
+					return new naaree ( );
+				case "Sree":
+					return new Sree ( );
+				case "stree":
+					return new stree ( );
+				case "sukaaMti":
+					return new sukaaMti ( );
+				case "chaMpakamaali":
+					return new chaMpakamaali ( );
+				case "bhadrika":
+					return new bhadrika ( );
+				case "bhadrika2":
+					return new bhadrika2 ( );
+				case "dOdakamu":
+					return new dOdakamu ( );
+				case "kshama":
+					return new kshama ( );
+				case "khacharaplutamu":
+					return new khacharaplutamu ( );
+				case "geetaalaMbanamu":
+					return new geetaalaMbanamu ( );
+				case "gOvRsha":
+					return new gOvRsha ( );
+				case "gauri":
+					return new gauri ( );
+
+				case "chaMchareekaavaLi":
+					return new chaMchareekaavaLi ( );
+				case "chaMdrakaLa":
+					return new chaMdrakaLa ( );
+				case "chaMdralaekha":
+					return new chaMdralaekha ( );
+				case "chaMdraSree":
+					return new chaMdraSree ( );
+				case "chitrapadamu":
+					return new chitrapadamu ( );
+				case "jalaMdharamu":
+					return new jalaMdharamu ( );
+				case "jaladamu":
+					return new jaladamu ( );
+				case "jaladharamaala":
+					return new jaladharamaala ( );
+				case "jalOddhatagati":
+					return new jalOddhatagati ( );
+				case "tanumadhyaavRttamu":
+					return new tanumadhyaavRttamu ( );
+				case "taraLamu":
+					return new taraLamu ( );
+				case "turagavalgitavRttamu":
+					return new turagavalgitavRttamu ( );
+				case "dRtavilaMbitamu":
+					return new dRtavilaMbitamu ( );
+				case "nadi":
+					return new nadi ( );
+				case "narkuTamu":
+					return new narkuTamu ( );
+				case "navanaMdini":
+					return new navanaMdini ( );
+				case "naaMdeemukhi":
+					return new naaMdeemukhi ( );
+
+				case "padmakamu":
+					return new padmakamu ( );
+				case "padmanaabhamu":
+					return new padmanaabhamu ( );
+				case "paalaaSadaLamu":
+					return new paalaaSadaLamu ( );
+				case "pRthiveevRttamu":
+					return new pRthiveevRttamu ( );
+
+				case "pramaaNi":
+					return new pramaaNi ( );
+				case "pramitaaksharamu":
+					return new pramitaaksharamu ( );
+				case "praharshiNi":
+					return new praharshiNi ( );
+				case "priyaMvada":
+					return new priyaMvada ( );
+				case "priyakaaMta":
+					return new priyakaaMta ( );
+				case "phalasadanamu":
+					return new phalasadanamu ( );
+				case "baMdhuramu":
+					return new baMdhuramu ( );
+				case "balabhinmaNi":
+					return new balabhinmaNi ( );
+
+				case "bhadrakamu":
+					return new bhadrakamu ( );
+				case "bhadrakamu1":
+					return new bhadrakamu1 ( );
+				case "bhadriNeevRttamu":
+					return new bhadriNeevRttamu ( );
+				case "bhaaskaravilasitamu":
+					return new bhaaskaravilasitamu ( );
+				case "bhujaMgavijRMbhitamu":
+					return new bhujaMgavijRMbhitamu ( );
+				case "bhujagaSiSirutamu":
+					return new bhujagaSiSirutamu ( );
+				case "bhootilakamu":
+					return new bhootilakamu ( );
+				case "bhoonutamu":
+					return new bhoonutamu ( );
+				case "maMgaLamahaaSree":
+					return new maMgaLamahaaSree ( );
+				case "maMjubhaashiNi":
+					return new maMjubhaashiNi ( );
+				case "maMdaakraaMta":
+					return new maMdaakraaMta ( );
+				case "maNikamalavilasitamu":
+					return new maNikamalavilasitamu ( );
+				case "maNigaNanikaramu":
+					return new maNigaNanikaramu ( );
+				case "maNibhooshaNamu":
+					return new maNibhooshaNamu ( );
+				case "maNimaala":
+					return new maNimaala ( );
+				case "maNiraMgamu":
+					return new maNiraMgamu ( );
+				case "matta":
+					return new matta ( );
+				case "mattamayooramu":
+					return new mattamayooramu ( );
+
+				case "mattahaMsini":
+					return new mattahaMsini ( );
+				case "madanamu":
+					return new madanamu ( );
+				case "madanavilasitamu":
+					return new madanavilasitamu ( );
+				case "madanaarta":
+					return new madanaarta ( );
+				case "manOj_namu":
+					return new manOj_namu ( );
+				case "mayoorasaari":
+					return new mayoorasaari ( );
+				case "malayajamu":
+					return new malayajamu ( );
+				case "maedini":
+					return new maedini ( );
+				case "mOhapralaapamu":
+					return new mOhapralaapamu ( );
+				case "rati":
+					return new rati ( );
+				case "rathOddhatamu":
+					return new rathOddhatamu ( );
+				case "ramaNakamu":
+					return new ramaNakamu ( );
+				case "raajahaMsa":
+					return new raajahaMsa ( );
+				case "rugmavati":
+					return new rugmavati ( );
+				case "ruchiramu":
+					return new ruchiramu ( );
+				case "lata":
+					return new lata ( );
+				case "laaTeeviTamu":
+					return new laaTeeviTamu ( );
+				case "vaMSasthamu":
+					return new vaMSasthamu ( );
+				case "vanamaMjari":
+					return new vanamaMjari ( );
+				case "vasaMtamaMjari":
+					return new vasaMtamaMjari ( );
+				case "vaatOrmi":
+					return new vaatOrmi ( );
+				case "vaasaMti":
+					return new vaasaMti ( );
+				case "vichitramu":
+					return new vichitramu ( );
+				case "vidyunmaala":
+					return new vidyunmaala ( );
+				case "vidrumalata":
+					return new vidrumalata ( );
+				case "vibhootivRttamu":
+					return new vibhootivRttamu ( );
+				case "viSvadaevi":
+					return new viSvadaevi ( );
+				case "Saalini":
+					return new Saalini ( );
+				case "SikhariNi":
+					return new SikhariNi ( );
+				case "SuddhaviraaTi":
+					return new SuddhaviraaTi ( );
+				case "Syaeni":
+					return new Syaeni ( );
+				case "samaani":
+					return new samaani ( );
+				case "sarasaaMkavRttamu":
+					return new sarasaaMkavRttamu ( );
+				case "saadhveevRttamu":
+					return new saadhveevRttamu ( );
+				case "sarasijamu":
+					return new sarasijamu ( );
+
+				case "siMharaekha":
+					return new siMharaekha ( );
+				case "suMdari":
+					return new suMdari ( );
+				case "paMkti":
+					return new paMkti ( );
+
+				case "tribhaMgi":
+					return new tribhaMgi ( );
+
+				case "vinayaM":
+					return new vinayaM ( );
+				case "biMbamu":
+					return new biMbamu ( );
+
+				case "madhumati":
+					return new madhumati ( );
+				case "madaraekha":
+					return new madaraekha ( );
+				case "halamukhi":
+					return new halamukhi ( );
+				case "upajaati":
+					return new upajaati ( );
+				case "iMdravaMSamu":
+					return new iMdravaMSamu ( );
+				case "aparaajitamu":
+					return new aparaajitamu ( );
+				case "asaMbaadha":
+					return new asaMbaadha ( );
+				case "kamalavilasitamu":
+					return new kamalavilasitamu ( );
+				case "sukaesaramu":
+					return new sukaesaramu ( );
+				case "hariNi":
+					return new hariNi ( );
+				case "kusumitalataavaellita":
+					return new kusumitalataavaellita ( );
+				case "aMburuhamu":
+					return new aMburuhamu ( );
+				case "aSvalalitamu":
+					return new aSvalalitamu ( );
+				case "ashTamoorti":
+					return new ashTamoorti ( );
+				case "manOharamu":
+					return new manOharamu ( );
+				case "aMgajaastramu":
+					return new aMgajaastramu ( );
+
+				case "rathagamanamanOharamu":
+					return new rathagamanamanOharamu ( );
+				case "veeNaarachanamu":
+					return new veeNaarachanamu ( );
+				case "aalOla":
+					return new aalOla ( );
+				case "iMduvadana":
+					return new iMduvadana ( );
+				case "kuTajagati":
+					return new kuTajagati ( );
+
+				case "kalaravamu":
+					return new kalaravamu ( );
+				case "kumaari":
+					return new kumaari ( );
+				case "kalahaMsi":
+					return new kalahaMsi ( );
+
+				case "kumaaralalita":
+					return new kumaaralalita ( );
+				case "kOmalavRttamu":
+					return new kOmalavRttamu ( );
+				case "paNavamu":
+					return new paNavamu ( );
+				case "suralata":
+					return new suralata ( );
+				case "sumaMgali":
+					return new sumaMgali ( );
+				case "karibRMhitamu":
+					return new karibRMhitamu ( );
+				case "kanakaprabha":
+					return new kanakaprabha ( );
+				case "viyOgini":
+					return new viyOgini ( );
+				case "ajitaprataapamu":
+					return new ajitaprataapamu ( );
+				case "aMbuja":
+					return new aMbuja ( );
+				case "tripadi2":
+					return new tripadi2 ( );
+
+
+
+
+
+				case "taeTageeti":
+					return new taeTageeti ( );
+				case "aaTaveladi":
+					return new aaTaveladi ( );
+
+				case "seesaM":
+					return new seesaM ( );
+				case "seesaM2":
+					return new seesaM2 ( );
+
+				case "sarvalaghusIsamu":
+					return new sarvalaghusIsamu ( );
+				case "sarvalaghusIsamu2":
+					return new sarvalaghusIsamu2 ( );
+
+
+
+				case "kandam":
+					return new kandam ( );
+				case "utsaahamu":
+					return new utsaahamu ( );
+				case "taruvOja":
+					return new taruvOja ( );
+				case "tripadi":
+					return new tripadi ( );
+
+				case "mahaaakkara":
+					return new mahaaakkara ( );
+				case "madhyaakkara":
+					return new madhyaakkara ( );
+				case "madhuraakkara":
+					return new madhuraakkara ( );
+				case "aMtaraakkara":
+					return new aMtaraakkara ( );
+				case "alpaakkara":
+					return new alpaakkara ( );
+
+
+				case "dvipada":
+					return new dvipada ( );
+				case "dvipadamaalika":
+					return new dvipadamaalika ( );
+				case "maMjareedvipada":
+					return new maMjareedvipada ( );
+
+
+				case "lalita2":
+					return new lalita2 ( );
+				case "chaMchala":
+					return new chaMchala ( );
+				case "j_naana":
+					return new j_naana ( );
+				case "jaagrati":
+					return new jaagrati ( );
+				case "SivaSaMkara":
+					return new SivaSaMkara ( );
+				case "mattaebha":
+					return new mattaebha ( );
+
+				case "naaraayaNa":
+					return new naaraayaNa ( );
+				case "gaNanaatha":
+					return new gaNanaatha ( );
+				case "Sreekara":
+					return new Sreekara ( );
+				case "daeva":
+					return new daeva ( );
+				case "paramaeSa":
+					return new paramaeSa ( );
+				case "DiMDima":
+					return new DiMDima ( );
+				case "sannuta":
+					return new sannuta ( );
+				case "mahaamaMgaLamaNi":
+					return new mahaamaMgaLamaNi ( );
+				case "chaMdraSaekhara":
+					return new chaMdraSaekhara ( );
+				case "SaMkara1":
+					return new SaMkara1 ( );
+				case "chaMdraSree2":
+					return new chaMdraSree2 ( );
+				case "kamalaakara":
+					return new kamalaakara ( );
+				case "SaMkara2":
+					return new SaMkara2 ( );
+				case "vaamadaeva":
+					return new vaamadaeva ( );
+
+				case "maMgaLamaNi":
+					return new maMgaLamaNi ( );
+				case "Damaruka":
+					return new Damaruka ( );
+
+				case "Sreemati":
+					return new Sreemati ( );
+
+				case "taaraka":
+					return new taaraka ( );
+				case "tanumadhyamaa":
+					return new tanumadhyamaa ( );
+				case "taaMDavajava":
+					return new taaMDavajava ( );
+
+				case "vaaNi":
+					return new vaaNi ( );
+				case "maNideepti":
+					return new maNideepti ( );
+				case "prabhaakalita":
+					return new prabhaakalita ( );
+				case "mattakeera":
+					return new mattakeera ( );
+				case "yaSasvi":
+					return new yaSasvi ( );
+				case "lakshmee":
+					return new lakshmee ( );
+				case "nati":
+					return new nati ( );
+
+				case "tulya2":
+					return new tulya2 ( );
+				case "gaayaka":
+					return new gaayaka ( );
+				case "tulya1":
+					return new tulya1 ( );
+				case "SObhanamahaaSree":
+					return new SObhanamahaaSree ( );
+				case "kalyaaNa":
+					return new kalyaaNa ( );
+				case "SaMbhunaTanamu":
+					return new SaMbhunaTanamu ( );
+
+
+			}
+
+			return null;
+		}
+		public static Rule[] Rules()
+		{
+			return new Rule[]{
+										new aaTaveladi ( ) , new taeTageeti ( ) ,new shaTpadamu(),
+										new sarvalaghusIsamu ( ) ,new sarvalaghusIsamu2 ( ) , new seesaM ( ) ,  new seesaM2(),
+										new utsaahamu(),new kandam(),new taruvOja(),new tripadi() ,
+										new aMtaraakkara(),new alpaakkara(),new madhuraakkara(),new madhyaakkara(),new mahaaakkara(),
+										new dvipada(), new dvipadamaalika(),new maMjareedvipada() ,
+										new iMdravajramu(),
+										new utpalamaala(),
+										new upEMdravajramu(),
+										new kaviraajaviraajitamu(),
+										new krauMchapadaM(),
+										new chaMpakamaala(),
+										new taralamu(),
+										new tOTakamu(),
+										new tOvakamu(),
+										new paMchaamaramu(),
+										new bhujaMgaprayaatamu(),
+										new mattakOkilamu(),
+										new maththEbhaM(),
+										new mahaasragdhara(),
+										new maanini(),
+										new maalini(),
+										new mEghavisphooritaM(),
+										new layagraahi(),
+										new layavibhaati(),
+										new vanamayooramu(),
+										new vasaMtatilakamu(),
+										new saardhoolaM(),
+										new SlOkamu(),
+										new sragdhara(),
+										new sragviNi(),
+										new svaagatavRttamu(),
+										new kshama(),
+										new khacharaplutamu(),
+										new geetaalaMbanamu(),
+										new gOvRsha(),
+										new gauri(),
+										
+										new chaMchareekaavaLi(),
+										new chaMdrakaLa(),
+										new chaMdralaekha(),
+										new chaMdraSree(),
+										
+										
+										new chitrapadamu(),
+										new jalaMdharamu(),
+										new jaladamu(),
+										new jaladharamaala(),
+										new jalOddhatagati(),
+										new tanumadhyaavRttamu(),
+										new taraLamu(),
+										new turagavalgitavRttamu(),
+										new dRtavilaMbitamu(),
+										new nadi(),
+										new nadeepraghOshamu(),
+										new narkuTamu(),
+										new navanaMdini(),
+										new naaMdeemukhi(),
+										new naaree(),
+										new naareeplutavRttamu(),
+									
+										new padmakamu(),
+										new padmanaabhamu(),
+										new paalaaSadaLamu(),
+										new pRthiveevRttamu(),
+										new praguNa(),
+									
+										
+										new pramaaNi(),
+										new pramitaaksharamu(),
+										new praharaNakalita(),
+										new praharshiNi(),
+										new priyaMvada(),
+										new priyakaaMta(),
+										new phalasadanamu(),
+										new baMdhuramu(),
+										new balabhinmaNi(),
+										
+										new bhadrakamu(),
+										new bhadrakamu1(),
+										new bhadriNeevRttamu(),
+										new bhaaskaravilasitamu(),
+										new bhujaMgavijRMbhitamu(),
+										new bhujagaSiSirutamu(),
+										new bhootilakamu(),
+										new bhoonutamu(),
+										new maMgaLamahaaSree(),
+										new maMjubhaashiNi(),
+										new maMdaakraaMta(),
+										new maNikamalavilasitamu(),
+										new maNigaNanikaramu(),
+										new maNibhooshaNamu(),
+										new maNimaala(),
+										new maNiraMgamu(),
+										new mattamayooramu(),
+										
+										new mattahaMsini(),
+										new madanavilasitamu(),
+										new madanamu(),
+										new madanaarta(),
+										new manOj_namu(),
+										new mayoorasaari(),
+										new malayajamu(),
+									
+										new maedini(),
+										new vaaraaMgi(),
+										new mOhapralaapamu(),
+										new rati(),
+										new ratipriyavRttamu(),
+										new rathOddhatamu(),
+										new ramaNakamu(),
+										new raajahaMsa(),
+										new rugmavati(),
+										new ruchiramu(),
+										new lata(),
+										new layahaari(),
+										new laaTeeviTamu(),
+										new vaMSasthamu(),
+										new vanamaMjari(),
+										new vasaMtamaMjari(),
+										new vaatOrmi(),
+										new vaasaMti(),
+										new vichitramu(),
+										new vidyunmaala(),
+										new vidrumalata(),
+										new vibhootivRttamu(),
+										new viSvadaevi(),
+										new SarabhakreeDaa(),
+										new Saalini(),
+										new SikhariNi(),
+										new SuddhaviraaTi(),
+										new Syaeni(),
+										new Sree(),
+										new stree(),
+										new SreeramaNamu(),
+										new samaani(),
+										new sarasaaMkavRttamu(),
+										new sarasijamu(),
+										new saadhveevRttamu(),
+										
+										new siMharaekha(),
+										new sukaaMti(),
+										new suMdari(),
+										new paMkti(),
+										new sugaMdhi(),
+										new matta(),
+										new tribhaMgi(),
+										new vinayaM(),
+										new biMbamu(),
+										new madhumati(),
+										new madaraekha(),
+										new halamukhi(),
+										new upajaati(),
+										new iMdravaMSamu(),
+										new aparaajitamu(),
+										new asaMbaadha(),
+										new kamalavilasitamu(),
+										new sukaesaramu(),
+										new hariNi(),
+										new kusumitalataavaellita(),
+										new aMburuhamu(),
+										new aSvalalitamu(),
+										new ashTamoorti(),
+										new manOharamu(),
+										new aMgajaastramu(),
+										
+										new rathagamanamanOharamu(),
+										new veeNaarachanamu(),
+										new iMduvadana(),new kuTajagati(),new kalaravamu(),new kumaari(),new kalahaMsi(),new kumaaralalita(),new kOmalavRttamu(),new paNavamu(),new suralata(),new sumaMgali(),new karibRMhitamu(),new kanakaprabha(),new viyOgini(),new ajitaprataapamu(),new aMbuja(),
+										new tripadi2(),
+										new utkaLika(),new vijayabhadraragaDa ( ),new haMsagatiragaDa(),new vRshabhagatiragaDa(),new dviradagatiragaDa(),new hariNagatiragaDa(),new harigatiragaDa(),new madhuragatiragaDa(),new vijayamaMgaLaragaDa(),new hayaprachaararagaDa(),new turagavalganaragaDa(),
+										new mutyaalasaramu(),new mutyaalasaramu2(),
+										new vaardhakashaTpada(),new parivardinishaTpada(),new bhaamineeshaTpada(),new bhOgashaTpada(),new kusumashaTpada(),new SarashaTpada(),
+										new mRgi(),new vreeDa(),new kanya(),new sati(),new preeti(),new naMda(),new valamuri(),new vasumati(),new vasudha(),new chaMdravadana(),new saavitrI(),new suruchira1(),new haMsamaala(),new lOla(),new kumaaralalita2(),new prasavaSara(),new haMsaruta(),new vimaana(),
+										new vitaana(),new maaNavaka(),new naaraacha(),new naagara(),new bhujaMgaSiSirutamu(),
+										new chaMpakamaali(),new bhadrika(),new bhadrika2(),new dOdakamu(),
+										new kOmala(),new kaumidi(),new naMdini(),new utsuka(),new kiSOra(),new rasaali(),new manOrama(),new paMkti2(),new bhOgavilasita(),
+										new padamaali(),new prabha(),new prahEya(),new maNimaala1(),new mEghavilasitamu(),new lalita(),new navamaalini(),new kusuma_vichitra(),new chaMdravartma(),new vRMta(),new maMdaaradaama(),new sumukhi(),new upasthita2(),new upasthita1(),new Ekaroopa(),new pRdhivi(),new bhramara_vilasita(),new mauktikamaala(),
+										new sumaMgali1(),new prabhaatamu2(),new chaMcharIkaavali2(),new bhaMbaragaana(),
+										new bhoonuta2(),new aalOla(),new nalini(),new chaMdrarEkha(),new ila(),new ila2(),new alasagati(),new padmakamu2(),new lalitagati(),new gajaraaja(),new gajavilasita(),new aSvagati(),new madanadarpaNa(),new chaMdrabhaanu(),new padakOkilakaaMka(),new vaMSapattrapatita(),new dhRti(),new chaMpakakEsari(),
+										new hariNapluta(),new tvaritapadagati(),new niSa(),new haranartana(),new ativinaya(),new dEvaraaja(),new kshmaahaara(),
+										new kavikaMThavibhooShaNa(),new SaMbhu(),new Subhika(),
+										new durmila(),new SRMgaara(),new kirITa(),new baMdhura(),new vijaya(),new suruchi(),new vanaruha(),new jaladarava(),new varaha(),new prabhu(),new apavaaha(),new tanvi(),new kusuma(),new mattaakrIDa(),new narEMdra(),new surabhoojaraaja(),new kanakalata(),new haMsi(),new vichikilata(),new prabhaalalitamu(),new kalita(),new bhujara(),
+										new chaarumati(),new ujjvala(),new vRtta(),new madraka(),
+										new laakshaNi(),new dara(),new Saaloora(),
+										new chaMDavRshTiprayaata(),new arNa(),new arNava(),new vyaaLa(),new jeemoota(),new leelaakara(),new uddaama(),new SaMkha(),new nanahata(),new sanahata(),new nanata(),new nanaya(),new nata(),new sata(),new ragaNa(),new tagaNa(),new nagaNa(),new hagaNa(),new nasahata(),
+										new taaLaragaDa(),
+										new lalita2(),new naaraayaNa(),new gaNanaatha(),new Sreekara(),new daeva(),new paramaeSa(),new DiMDima(),new sannuta(),new mahaamaMgaLamaNi(),new chaMdraSaekhara(),new SaMkara1(),new chaMdraSree2(),new kamalaakara(),new SaMkara2(),new vaamadaeva(),new chaMchala(),new maMgaLamaNi(),new Damaruka(),new j_naana(),new Sreemati(),new jaagrati(),new taaraka(),new tanumadhyamaa(),new taaMDavajava(),new SivaSaMkara(),new vaaNi(),new maNideepti(),new prabhaakalita(),new mattakeera(),new yaSasvi(),new lakshmee(),new nati(),new mattaebha(),new tulya2(),new gaayaka(),new tulya1(),new SObhanamahaaSree(),new kalyaaNa(),new SaMbhunaTanamu(),
+										//new Genric(),//It should be the last One always....
+						};
+		}
+	}
+
+}

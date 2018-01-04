@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91C994A6-0245-406C-8637-C446E58F27BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rules</RootNamespace>
+    <AssemblyName>Chandam.Rules</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheatSheet.cs" />
+    <Compile Include="CheatSheet2.cs" />
+    <Compile Include="Helper\RuleManager.cs" />
+    <Compile Include="Helper\SansHelper.cs" />
+    <Compile Include="Helper\RuleHelper.cs" />
+    <Compile Include="Helper\_Sans.RuleHelper.cs" />
+    <Compile Include="Helper\Tel.RuleHelper.cs" />
+    <None Include="Helper\Tel.RuleHelper.cs.exclude">
+      <SubType>Code</SubType>
+    </None>
+    <Compile Include="Jati\Akkara.cs" />
+    <Compile Include="Jati\Dvipada.cs" />
+    <Compile Include="Jati\JatiRules.cs" />
+    <Compile Include="Jati\Ragada.cs" />
+    <Compile Include="Jati\Shatpada.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sans\D.cs" />
+    <Compile Include="Kokkanda.cs" />
+    <Compile Include="Sans\San2.cs" />
+    <Compile Include="Sans\SansCodeIt.cs" />
+    <Compile Include="Sans\TelCodeIt.cs" />
+    <Compile Include="Helper\SortHelper.cs" />
+    <Compile Include="Helper\SortHelper2.cs" />
+    <Compile Include="UpaJati\Seesamu.cs" />
+    <Compile Include="UpaJati\UpdaJatiRules.cs" />
+    <Compile Include="Vruttam\Asama.cs" />
+    <Compile Include="Vruttam\daMDakamulu.cs" />
+    <Compile Include="Vruttam\Generic.cs" />
+    <Compile Include="Vruttam\R1.cs" />
+    <Compile Include="Vruttam\R10.cs" />
+    <Compile Include="Vruttam\R11.cs" />
+    <Compile Include="Vruttam\R12.cs" />
+    <Compile Include="Vruttam\R13.cs" />
+    <Compile Include="Vruttam\R14.cs" />
+    <Compile Include="Vruttam\R15.cs" />
+    <Compile Include="Vruttam\R16.cs" />
+    <Compile Include="Vruttam\R17.cs" />
+    <Compile Include="Vruttam\R18.cs" />
+    <Compile Include="Vruttam\R19.cs" />
+    <Compile Include="Vruttam\R2.cs" />
+    <Compile Include="Vruttam\R20.cs" />
+    <Compile Include="Vruttam\R21.cs" />
+    <Compile Include="Vruttam\R22.cs" />
+    <Compile Include="Vruttam\R23.cs" />
+    <Compile Include="Vruttam\R24.cs" />
+    <Compile Include="Vruttam\R25.cs" />
+    <Compile Include="Vruttam\R26.cs" />
+    <Compile Include="Vruttam\R27.cs" />
+    <Compile Include="Vruttam\R3.cs" />
+    <Compile Include="Vruttam\R4.cs" />
+    <Compile Include="Vruttam\R5.cs" />
+    <Compile Include="Vruttam\R6.cs" />
+    <Compile Include="Vruttam\R7.cs" />
+    <Compile Include="Vruttam\R8.cs" />
+    <Compile Include="Vruttam\R9.cs" />
+    <Compile Include="Vruttam\RareRules.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Util\Chandam.Util.csproj">
+      <Project>{B7ECDF4A-15E5-429C-BB4C-BFF673E85F08}</Project>
+      <Name>Chandam.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{A2ACA50F-7E14-4A8F-AF2B-89D7FDA4429F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Verifier</RootNamespace>
+    <AssemblyName>Verifier</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Properties\Research.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\Web\Bin\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\Web\Bin\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>C:\Users\Rama\Downloads\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WindowsMediaFormat">
+      <HintPath>C:\Users\Rama\Downloads\NAudio.WindowsMediaFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Id3Lib">
+      <HintPath>bin\Debug\Id3Lib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Reserach\Services\Indic\Simple\IndicConverter.cs">
+      <Link>IndicConverter.cs</Link>
+    </Compile>
+    <Compile Include="Chandassu.cs" />
+    <Compile Include="Music\CombineMP3.cs" />
+    <Compile Include="CSWriter.cs" />
+    <Compile Include="Dict.cs" />
+    <Compile Include="Eval.cs" />
+    <Compile Include="GenerateRulesJS.cs" />
+    <Compile Include="Jati2Vruttam.cs" />
+    <Compile Include="Jati2Vruttam2.cs" />
+    <Compile Include="Music\MidiSong.cs" />
+    <Compile Include="Music\MidiTrack.cs" />
+    <Compile Include="MSeries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayGround.cs" />
+    <Compile Include="Probable.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sans.cs" />
+    <Compile Include="Seq2BinaryMusic.cs" />
+    <Compile Include="Stats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StopWatch.cs" />
+    <Compile Include="SubscribersList.cs" />
+    <Compile Include="Music\MIDIGenerator.cs" />
+    <Compile Include="Music\VariableLength.cs" />
+    <Compile Include="Vruttam2Jati.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Research.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Chandam.Core.csproj">
+      <Project>{2F146852-E09A-43DE-A3FC-26AF8A464ADE}</Project>
+      <Name>Chandam.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rules\Chandam.Rules.csproj">
+      <Project>{91C994A6-0245-406C-8637-C446E58F27BE}</Project>
+      <Name>Chandam.Rules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Samples\Chandam.Samples.csproj">
+      <Project>{F346FEDE-C516-44E4-B1E3-62793CB424C2}</Project>
+      <Name>Chandam.Samples</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Strings\Chandam.Indic.csproj">
+      <Project>{EBA36E87-C1A0-44FE-AF8A-569727B148A4}</Project>
+      <Name>Chandam.Indic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TinyServer\Chandam.TinyServer.csproj">
+      <Project>{843818E0-6B1A-41CA-B229-F8FEF95D8992}</Project>
+      <Name>Chandam.TinyServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Chandam.Util.csproj">
+      <Project>{B7ECDF4A-15E5-429C-BB4C-BFF673E85F08}</Project>
+      <Name>Chandam.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

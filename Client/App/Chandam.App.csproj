@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2E13C2D-F95F-48E8-A8B4-20712AACAA7B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MiriyamApp</RootNamespace>
+    <AssemblyName>MiriyamApp</AssemblyName>
+    <CodeAnalysisRuleSet>Properties\FxCop.ruleset</CodeAnalysisRuleSet>
+    <GenerateScript>True</GenerateScript>
+    <GenerateResources>True</GenerateResources>
+    <MinimizeScript>True</MinimizeScript>
+    <CopyReferences>True</CopyReferences>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;CODE_ANALYSIS;SCRIPTSHARP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0028, 1591, 1684</NoWarn>
+    <DocumentationFile>bin\Debug\MiriyamApp.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>CODE_ANALYSIS;SCRIPTSHARP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0028, 1591, 1684</NoWarn>
+    <DocumentationFile>bin\Release\MiriyamApp.xml</DocumentationFile>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Core\Business\Business.cs">
+      <Link>Business.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Core\Business\Business3.cs">
+      <Link>Business3.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Core\Unclassified\Strings.cs">
+      <Link>Strings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Rules\Vruttam\Generic.cs">
+      <Link>Rules\Generic.cs</Link>
+    </Compile>
+    <Compile Include="Business2.cs" />
+    <Compile Include="AppStrings.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="CookieUtil.cs" />
+    <Compile Include="External.Social.cs" />
+    <Compile Include="LoadRules.cs" />
+    <Compile Include="MapRules.cs" />
+    <Compile Include="Samples\SamplePoems.cs" />
+    <Compile Include="Search.cs" />
+    <Compile Include="WorkerEvents.cs" />
+    <Compile Include="CSWriter.cs" />
+    <Compile Include="Designer.cs" />
+    <Compile Include="External.cs" />
+    <Compile Include="Labs.cs" />
+    <Compile Include="MenuItems.cs" />
+    <Compile Include="Metrics.cs" />
+    <Compile Include="OverlayDialog.cs" />
+    <Compile Include="Print.cs" />
+    <Compile Include="Social.cs" />
+    <Compile Include="StopWatch.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Worker.cs" />
+    <None Include="packages.config" />
+    <None Include="Properties\FxCop.ruleset" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Page.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Script.Web">
+      <HintPath>..\..\packages\ScriptSharp.Lib.HTML.0.8\lib\Script.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\MiriyamLib.csproj">
+      <Project>{D64E8209-574C-4C8D-8D05-0E360A31E347}</Project>
+      <Name>MiriyamLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{EC9B9813-6450-47A6-BF32-D92391F54E3D}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\packages\nuget.targets" />
+  <Import Project="..\..\packages\ScriptSharp.0.8\tools\ScriptSharp.targets" Condition="Exists('..\..\packages\ScriptSharp.0.8\tools\ScriptSharp.targets')" />
+  <Target Name="AfterBuild">
+    <Copy SourceFiles="@(ScriptInfo)" DestinationFiles="$(OutputPath)$(AssemblyName).txt" />
+  </Target>
+  <Target Name="CopyScript" AfterTargets="BuildScript">
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).js" DestinationFolder="..\..\Data\JS" />
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).min.js" DestinationFolder="..\..\Web\JS" />
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).js" DestinationFolder="..\..\Web\JS" />
+  </Target>
+</Project>
