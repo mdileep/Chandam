@@ -1,0 +1,38 @@
+﻿@font-face
+{
+	font-family: 'RaviPrakash';
+	src: url('f/RaviPrakash.eot');
+	src: local('RaviPrakash'), url('font.ashx?u=RaviPrakash.eot&amp;iefix') format('eot'), url('font.ashx?u=RaviPrakash.woff') format('woff'), url('font.ashx?u=RaviPrakash.svg') format('svg');
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'RamaneeyaRegular';
+	src: url('f/RamaneeyaWin.eot');
+	src: local('RamaneeyaWin'), url('font.ashx?u=RamaneeyaWin.eot?iefix') format('eot'), url('font.ashx?u=RamaneeyaWin.woff') format('woff'), url('font.ashx?u=RamaneeyaWin.svg') format('svg');
+	font-style: normal;
+}
+body
+{
+ font-family: 'RamaneeyaRegular';
+}
+
+.code
+{
+color:Blue;
+font-size:14px;
+border:1px solid #EEEEEE;
+border-left:2px solid yellow;
+padding-left:16px;
+margin:10px;
+max-height:200px;
+overflow:auto;
+}
+h1
+{
+	 margin-left:20%;
+}
+.config
+{
+	clear:both;
+}

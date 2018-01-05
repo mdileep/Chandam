@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Chandam API -beautifyTags() Example</title>
+	<meta name="author" content="Dileep Miriyala" />
+	<link href="example.css" rel="stylesheet" type="text/css" />
+	<script src="/js/chandam.te.min.js" type="text/javascript"></script>
+	<link href="/css/chandam.api.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>Chandam API -beautifyTags()</h1>
+	<div>
+	<h2>API in Action</h2>
+	<p>
+			మసకొని రేఁగుబండ్లకును మౌక్తికముల్‌ వెలబోసినట్లు దు<br>
+			ర్వ్యసనముజెంది కావ్యము దురాత్ములకిచ్చితి మోసమయ్యె నా<br>
+			రసనకుఁ బూతవృత్తిసుకరంబుగఁ జేకురునట్లు వాక్సుధా<br>
+			రసములు చిల్కఁ బద్యముఖరంగమునందు నటింపవయ్య సం<br>
+			తసము జెంది భద్రగిరి దాశరథీ! కరుణాపయోనిధీ! 
+	</p>
+	<p>
+			శ్రీరమణీయహార యతసీకుసుమాభశరీర భక్తమం
+			దార వికారదూర పరతత్త్వవిహార త్రిలోకచేతనో
+			ద్ధార దురంతపాతకవితానవిదూర ఖరాదిదైత్యకాం
+			తార కుఠార భద్రగిరి దాశరథీ! కరుణాపయోనిధీ! 
+	</p>
+	</div>
+	
+	<div>
+	<h2>Configuration</h2>
+	<ol>
+		<li>Include chandam.min.js:<br />
+			<div class="code">&lt;script src="http://chandam.apphb.com/js/chandam.te.min.js" type="text/javascript"&gt;&lt;/script&gt;</div>
+		</li>
+		<li>Include Default chandam.api.css or Custom CSS file: <br />
+			<div class="code">&lt;link href="http://chandam.apphb.com/css/chandam.api.css" rel="stylesheet" type="text/css" /&gt;</div>
+		</li>
+		<li>Your HTML Code:<br />
+			<div class="code">
+				&lt;p&gt;<br/>
+				మసకొని రేఁగుబండ్లకును మౌక్తికముల్‌ వెలబోసినట్లు దు&lt;br&gt;<br/>
+				ర్వ్యసనముజెంది కావ్యము దురాత్ములకిచ్చితి మోసమయ్యె నా&lt;br&gt;<br/>
+				రసనకుఁ బూతవృత్తిసుకరంబుగఁ జేకురునట్లు వాక్సుధా&lt;br&gt;<br/>
+				రసములు చిల్కఁ బద్యముఖరంగమునందు నటింపవయ్య సం&lt;br&gt;<br/>
+				తసము జెంది భద్రగిరి దాశరథీ! కరుణాపయోనిధీ! <br/>
+				&lt;/p&gt;<br/>
+				&lt;p&gt;<br/>
+				శ్రీరమణీయహార యతసీకుసుమాభశరీర భక్తమం<br/>
+				దార వికారదూర పరతత్త్వవిహార త్రిలోకచేతనో<br/>
+				ద్ధార దురంతపాతకవితానవిదూర ఖరాదిదైత్యకాం<br/>
+				తార కుఠార భద్రగిరి దాశరథీ! కరుణాపయోనిధీ! <br/>
+				&lt;/div&gt;
+			</div>
+		</li>
+		<li>Beautify Tags<br />
+			<div class="code">
+				&lt;script type="text/javascript"&gt;<br />
+				require(["MiriyamAPI"], function (MiriyamAPI) {<br />
+				MiriyamAPI.Worker.beautifyTags("p");<br />
+				});<br />
+				&lt;/script&gt; 
+			</div>
+		</li>
+	</ol>
+	</div>
+
+	<script type="text/javascript">
+		require(["MiriyamAPI"], function (MiriyamAPI) {
+			MiriyamAPI.Worker.beautifyTags("p");
+		});
+	</script>
+	<script src="/js/ga.js" type="text/javascript"></script>
+</body>
+</html>

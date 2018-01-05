@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Chandam API -beautifyTags() Example</title>
+	<meta name="author" content="Dileep Miriyala" />
+	<link href="example.css" rel="stylesheet" type="text/css" />
+	<script src="/js/chandam.te.min.js" type="text/javascript"></script>
+	<link href="/css/chandam.api.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<h1>Chandam API -beautifyTags()</h1>
+	<div>
+	<h2>API in Action</h2>
+	<p>
+		రామ విశాలవిక్రమ పరాజిత భార్గవరామ సద్గుణ<br/>
+		స్తోమ పరాంగనావిముఖ సువ్రతకామ వినీల నీరద<br/>
+		శ్యామ కకుత్స్థవంశకలశాంబుధి సోమ సురారిదోర్బలో<br/>
+		ద్దామవిరామ భద్రగిరి దాశరథీ! కరుణాపయోనిధీ! 
+	</p>
+	<p>
+		రంగదరాతిభంగ ఖగరాజతురంగ విపత్పరంపరో
+		త్తుంగ తమఃపతంగ పరితోషితరంగ దయాంతరంగ స
+		త్సంగ ధరాత్మజాహృదయసారసభృంగ నిశాచరాబ్జమా
+		తంగ శుభాంగ భద్రగిరి దాశరథీ! కరుణాపయోనిధీ! 
+	</p>
+	</div>
+	
+	<div>
+	<h2>Configuration</h2>
+	<ol>
+		<li>Include chandam.min.js:<br />
+			<div class="code">&lt;script src="http://chandam.apphb.com/js/chandam.te.min.js" type="text/javascript"&gt;&lt;/script&gt;</div>
+		</li>
+		<li>Include Default chandam.api.css or Custom CSS file: <br />
+			<div class="code">&lt;link href="http://chandam.apphb.com/css/chandam.api.css" rel="stylesheet" type="text/css" /&gt;</div>
+		</li>
+		<li>Your HTML Code:<br />
+			<div class="code">
+				&lt;p&gt;<br/>
+				రామ విశాలవిక్రమ పరాజిత భార్గవరామ సద్గుణ&lt;br&gt;<br/>
+				స్తోమ పరాంగనావిముఖ సువ్రతకామ వినీల నీరద&lt;br&gt;<br/>
+				శ్యామ కకుత్స్థవంశకలశాంబుధి సోమ సురారిదోర్బలో&lt;br&gt;<br/>
+				ద్దామవిరామ భద్రగిరి దాశరథీ! కరుణాపయోనిధీ! <br/>
+				&lt;/p&gt;<br/>
+				&lt;p&gt;<br/>
+				రంగదరాతిభంగ ఖగరాజతురంగ విపత్పరంపరో<br/>
+				త్తుంగ తమఃపతంగ పరితోషితరంగ దయాంతరంగ స<br/>
+				త్సంగ ధరాత్మజాహృదయసారసభృంగ నిశాచరాబ్జమా<br/>
+				తంగ శుభాంగ భద్రగిరి దాశరథీ! కరుణాపయోనిధీ! 
+				&lt;/div&gt;
+			</div>
+		</li>
+		<li>Beautify Tags<br />
+
+			<h3>Ensure that all Poems are of same type.</h3>
+
+			<div class="code">
+				&lt;script type="text/javascript"&gt;<br />
+				require(["MiriyamAPI"], function (MiriyamAPI) {<br />
+				MiriyamAPI.Worker.beautifyTags("p");<br />
+				});<br />
+				&lt;/script&gt; 
+			</div>
+
+		</li>
+	</ol>
+	</div>
+
+	<script type="text/javascript">
+		require(["MiriyamAPI"], function (MiriyamAPI) {
+			MiriyamAPI.Worker.beautifyTags("p", "chaMpakamaala");
+		});
+	</script>
+	<script src="/js/ga.js" type="text/javascript"></script>
+</body>
+</html>

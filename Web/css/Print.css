@@ -1,0 +1,205 @@
+﻿@font-face
+{
+	font-family: 'RaviPrakash';
+	src: url('f/RaviPrakash.eot');
+	src: local('RaviPrakash'), url('font.ashx?u=RaviPrakash.eot&amp;iefix') format('eot'), url('font.ashx?u=RaviPrakash.woff') format('woff'), url('font.ashx?u=RaviPrakash.svg') format('svg');
+	font-style: normal;
+}
+@font-face
+{
+	font-family: 'RamaneeyaRegular';
+	src: url('f/RamaneeyaWin.eot');
+	src: local('RamaneeyaWin'), url('font.ashx?u=RamaneeyaWin.eot?iefix') format('eot'), url('font.ashx?u=RamaneeyaWin.woff') format('woff'), url('font.ashx?u=RamaneeyaWin.svg') format('svg');
+	font-style: normal;
+}
+h1
+{
+	font-family: "RaviPrakash";
+}
+body, textarea, select, option
+{
+	color: black;
+	font-family: "RamaneeyaRegular";
+	font-size: 16px;
+}
+a.identifier, a:hover .identifier, a:visited .identifier
+{
+	text-decoration: none;
+	color: Black;
+}
+
+.err
+{
+	font-family: RaviPrakash, Timmana,Ponnala, Vani, potana;
+}
+.err
+{
+	color: blue;
+	line-height: 50px;
+	font-size: 48px;
+}
+.w100
+{
+	width: 100%;
+}
+.center
+{
+	text-align: center;
+}
+.build
+{
+	width: 100%;
+	float: left;
+}
+.build3
+{
+  float:left;
+  margin-top:10px;	 
+}
+.buildErrors
+{
+	width: 100%;
+	margin-right: 10px;
+	float: left;
+}
+.candidates
+{
+	margin: 15px;
+	float: left;
+}
+div.power
+{
+	text-align: right;
+	color: red;
+	clear: both;
+	font-weight: bold;
+}
+.copyright
+{
+	color: rgb(102, 102, 102);
+	font-size: 20px;
+}
+.gName
+{
+	color: red;
+	font-weight: bold;
+}
+.errTab
+{
+	width: 100%;
+	text-align: left;
+	color: black;
+	font-size: 18px;
+	margin-left: 10px;
+	border-collapse: collapse;
+}
+.tab
+{
+	width: 100%;
+	text-align: center;
+	border-top-color: rgb(204, 204, 204);
+	border-right-color: rgb(204, 204, 204);
+	border-bottom-color: rgb(204, 204, 204);
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-collapse:collapse;
+}
+.ga
+{
+	color: green;
+	font-size: 16px;
+	background-color: rgb(255, 255, 255);
+}
+.up
+{
+	font-size: 16px;
+	background-color: rgb(255, 255, 255);
+}
+.dw
+{
+	color: black;
+	font-size: 16px;
+	background-color: rgb(255, 255, 255);
+}
+.gOk
+{
+	background-color: white;
+}
+.gErr
+{
+	color: red;
+	background-color: gray !important;
+}
+.X3
+{
+	text-align: center;
+	border-right-color: rgb(238, 187, 238);
+	border-bottom-color: rgb(204, 204, 204);
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	background-color: rgb(255, 255, 255);
+}
+.y1
+{
+	font-style: italic;
+}
+.yati
+{
+	color: rgb(255, 128, 0);
+}
+.X
+{
+	text-align: center;
+	border-right-color: rgb(238, 187, 238);
+	border-right-width: 1px;
+	border-right-style: solid;
+	background-color: rgb(255, 255, 255);
+}
+.stamper
+{
+	width: 25px;
+	color: black;
+	border-left-color: rgb(204, 204, 204);
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	background-color: rgb(221, 221, 221);
+}
+.ok
+{
+	color: green;
+	font-size: 32px;
+}
+.Red
+{
+	color: red;
+}
+.Green
+{
+	color: Green;
+}
+.Err22
+{
+	font-size: 22px;
+	color: #000000;
+	border-left: 10px solid #EEEEEE;
+	padding-left: 10px;
+	border-style: solid;
+	border-width: 1px 1px 1px 10px;
+	border-color: #0099FF;
+}
+.Err22 u
+{
+	color: Red;
+}
+.Err22 b
+{
+	color: Green;
+}
